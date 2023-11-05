@@ -43,6 +43,38 @@ main {
     height: 84vh;
 }
 
+#calendar {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.month select {
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, 
+th, 
+td {
+    border: 1px solid #000;
+}
+
+th, 
+td {
+    padding: 10px;
+}
+
 span {
     font-size: 14px;
 }
