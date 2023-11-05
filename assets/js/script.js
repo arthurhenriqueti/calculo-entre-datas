@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
             for (let j = 0; j < 7; j++) {
                 const cell = document.createElement("td");
                 if (i === 0 && j < firstDay) {
-                    cell.textContent = "";
+                    cell.textContent = "-";
                 } else if (currentDay > daysInMonth) {
-                    cell.textContent = "";
+                    cell.textContent = "-";
                 } else {
                     cell.textContent = currentDay;
                     currentDay++;
