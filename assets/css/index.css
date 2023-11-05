@@ -95,10 +95,6 @@ footer {
         margin-bottom: 30px;
         gap: 20px;
     }
-
-    footer {
-        margin-top: 50px;
-    }
 }
 
 @media (max-width: 420px) {
