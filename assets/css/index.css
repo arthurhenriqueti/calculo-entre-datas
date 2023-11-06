@@ -39,9 +39,9 @@ li a:hover {
     margin-bottom: 20px;
 }
 
-main {
+/*main {
     height: 84vh;
-}
+}*/
 
 span {
     font-size: 14px;
@@ -87,6 +87,19 @@ input[type="button"]:hover {
     background-color: #dddddd;
 }
 
+#area-textos h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#area-textos p {
+    margin-bottom: 10px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
 footer {
     height: 5vh;
     display: flex;
@@ -125,7 +138,7 @@ footer {
         font-size: 14px;
     }
 
-    main span {
+    main span, p, li {
         font-size: 12px;
     }
 }
