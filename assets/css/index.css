@@ -96,6 +96,11 @@ input[type="button"]:hover {
     margin-bottom: 10px;
 }
 
+#area-textos p,
+#area-textos li {
+    text-align: justify;
+}
+
 main li {
     margin-bottom: 10px;
 }
