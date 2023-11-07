@@ -104,3 +104,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentDate = new Date();
     generateCalendar(currentDate.getMonth(), currentDate.getFullYear());
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const selectFusoHorario = document.getElementById("fuso-horario");
+    const relogio = document.getElementById("relogio");
+
+    const fusosHorarios = moment.tz.names();
+
+    for (const fusoHorario of fusosHorarios) {
+        const option = document.createElement("option");
+        option.value = fusoHorario;
+        option.textContent = fusoHorario;
+        selectFusoHorario.appendChild(option);
+    }
+
+    function atualizarRelogio() {
+        const fusoHorarioSelecionado = selectFusoHorario.value;
+        const data = new Date();
+        const hora = moment.tz(data, fusoHorarioSelecionado).format("HH:mm:ss");
+        relogio.textContent = `Hora atual em ${fusoHorarioSelecionado}: ${hora}`;
+    }
+
+    atualizarRelogio();
+    selectFusoHorario.addEventListener("change", atualizarRelogio);
+});

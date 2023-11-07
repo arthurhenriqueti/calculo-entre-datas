@@ -43,6 +43,10 @@ main {
     height: 84vh;
 }
 
+#relogio {
+    margin-top: 20px;
+}
+
 span {
     font-size: 14px;
 }

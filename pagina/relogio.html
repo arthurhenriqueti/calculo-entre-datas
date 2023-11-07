@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../assets/css/relogio.css" type="text/css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8784552846541729"crossorigin="anonymous"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
     <title>Relógio Mundial</title>
 </head>
 <body>
@@ -25,7 +27,9 @@
         </header>
         <div id="area-google-adsense"></div>
         <main>
-            ...
+            <label for="fuso-horario">Selecione um fuso horário:</label><br>
+            <select id="fuso-horario"></select>
+            <div id="relogio"></div>
         </main>
     </div>
     <footer>
