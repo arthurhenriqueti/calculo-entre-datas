@@ -19,9 +19,18 @@ header {
     justify-content: space-between;
 }
 
-li {
-    display: block;
+nav li:nth-child(1) {
+    margin-right: 10px;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/*li {
+    display: block;
+}*/
 
 li a,
 header h1 a {
@@ -58,14 +67,7 @@ footer {
     justify-content: center;
 }
 
-@media (max-width: 1160px) {
-    body {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
-@media (max-width: 535px) {
+@media (max-width: 580px) {
     header {
         flex-direction: column;
     }
@@ -75,12 +77,19 @@ footer {
     }
 }
 
+@media (max-width: 1160px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 @media (max-width: 420px) {
     main h2 {
         font-size: 14px;
     }
 
-    main span {
+    main span, p, li {
         font-size: 12px;
     }
 }
